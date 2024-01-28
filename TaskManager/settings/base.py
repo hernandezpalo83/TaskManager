@@ -36,7 +36,7 @@ INSTALLED_APPS = [
     #Propios
     'proyectos',
     'web',
-    'app.core'
+    'app.core',
 ]
 
 MIDDLEWARE = [
