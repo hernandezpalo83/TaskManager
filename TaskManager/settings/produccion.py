@@ -13,7 +13,9 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = [ '*' ]
+ALLOWED_HOSTS = [ 'https://hernandezpalo-taskmanager.up.railway.app' ]
+
+CSRF_TRUSTED_ORIGINS = ['https://hernandezpalo-taskmanager.up.railway.app']
 
 
 DATABASES = {
