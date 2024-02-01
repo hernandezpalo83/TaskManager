@@ -56,7 +56,8 @@ class Tipo_tarea(models.Model):
 
 class Tarea(models.Model):
     titulo = models.CharField(max_length=500)
-    descripcion = RichTextField(verbose_name="Descripción")
+    #descripcion = RichTextField(verbose_name="Descripción")
+    descripcion = models.TextField()
     fechaini = models.DateField()
     fechafin = models.DateField()
     tiempo_estimado = models.IntegerField()
