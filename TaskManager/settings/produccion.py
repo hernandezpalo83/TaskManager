@@ -11,7 +11,11 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 
 DEBUG = False
 
-ALLOWED_HOSTS = [ 'https://hernandezpalo-taskmanager.up.railway.app', 'hernandezpalo-taskmanager.up.railway.app' , 'https://taskmanager-dev-ctbs.1.us-1.fl0.io']
+ALLOWED_HOSTS = [ 'https://hernandezpalo-taskmanager.up.railway.app',
+                 'hernandezpalo-taskmanager.up.railway.app' ,
+                 'https://taskmanager-dev-ctbs.1.us-1.fl0.io',
+                 'taskmanager-dev-ctbs.1.us-1.fl0.io',
+                 ]
 
 CSRF_TRUSTED_ORIGINS = ['https://hernandezpalo-taskmanager.up.railway.app', 'https://taskmanager-dev-ctbs.1.us-1.fl0.io']
 
