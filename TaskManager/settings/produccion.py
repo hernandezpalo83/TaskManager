@@ -1,4 +1,3 @@
-
 from dotenv import load_dotenv
 from TaskManager.settings.base import *
 from TaskManager.logging import *
@@ -10,13 +9,11 @@ load_dotenv(env_path)
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
-# SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = [ 'https://hernandezpalo-taskmanager.up.railway.app', 'hernandezpalo-taskmanager.up.railway.app' ]
+ALLOWED_HOSTS = [ 'https://hernandezpalo-taskmanager.up.railway.app', 'hernandezpalo-taskmanager.up.railway.app' , 'https://taskmanager-dev-ctbs.1.us-1.fl0.io']
 
-CSRF_TRUSTED_ORIGINS = ['https://hernandezpalo-taskmanager.up.railway.app']
-
+CSRF_TRUSTED_ORIGINS = ['https://hernandezpalo-taskmanager.up.railway.app', 'https://taskmanager-dev-ctbs.1.us-1.fl0.io']
 
 DATABASES = {
     'default': {
